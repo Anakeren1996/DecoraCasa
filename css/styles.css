@@ -1,0 +1,696 @@
+* {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 1000px;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    z-index: 10000;
+    transition: 0.5s;
+    background: #252424;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header.sticky {
+    background-color: #4d4d4d;
+    padding: 10px 100px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+header .img-logo {
+    width: 100%;
+}
+
+header.sticky .logo {
+    color: #111;
+}
+
+header .navigation {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+header .navigation li {
+    list-style: none;
+    margin-left: 30px;
+}
+
+header .navigation a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 300;
+}
+
+header.sticky .navigation li a {
+    color: #fff;
+}
+
+header .nav__login {
+    display: flex;
+}
+
+header #icons {
+    font-size: 2em;
+    color: #fff;
+}
+
+section#topo {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("../img/quinta-imagem.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+section#topo .content {
+    max-width: 900px;
+    text-align: center;
+}
+
+section#topo .content p {
+    font-size: 1em;
+    color: #4d4d4d;
+}
+
+section#topo h2 {
+    font-size: 5em;
+    color: #fff;
+}
+
+section#topo .btn {
+    font-size: 1em;
+    color: #fff;
+    background-color: #4d4d4d;
+    display: inline-block;
+    padding: 10px 30px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.5s;
+}
+
+section#topo .btn:hover {
+    letter-spacing: 5px;
+}
+
+section#catalogo {
+    padding: 70px;
+}
+
+section#catalogo .row {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+section#catalogo .row .col50 {
+    position: relative;
+    width: 48%;
+}
+
+section#catalogo .title-text {
+    font-size: 3em;
+    color: #4d4d4d;
+    font-weight: bolder;
+    padding-bottom: 30px;
+}
+
+section#catalogo p {
+    text-align: justify;
+}
+
+
+section#catalogo .row .col50 .imgBx {
+    position: relative;
+    width: 100%;
+    min-height: 300px;
+    /* height: 100%; */
+}
+
+section#catalogo .row .col50 .imgBx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+section#novo-catalogo {
+    padding: 70px;
+}
+
+section#novo-catalogo .row {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+section#novo-catalogo .row .col50 {
+    position: relative;
+    width: 48%;
+}
+
+section#novo-catalogo .title-text {
+    font-size: 3em;
+    color: #4d4d4d;
+    font-weight: bolder;
+    padding-bottom: 30px;
+}
+
+section#novo-catalogo p {
+    text-align: justify;
+}
+
+section#novo-catalogo .btn {
+    font-size: 1em;
+    color: #fff;
+    background-color: #4d4d4d;
+    display: inline-block;
+    padding: 10px 30px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.5s;
+}
+
+section#novo-catalogo .btn:hover {
+    letter-spacing: 5px;
+}
+
+
+
+section#novo-catalogo .row .col50 .imgBx {
+    position: relative;
+    width: 100%;
+    min-height: 300px;
+    /* height: 100%; */
+}
+
+section#novo-catalogo .row .col50 .imgBx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+section#carousel {
+    padding: 100px;
+    background: #f4f2e8;
+}
+
+section#carousel .slider {
+    margin: 0 auto;
+    width: 800px;
+    height: 400px;
+    overflow: hidden;
+}
+
+section#carousel .slides {
+    width: 400%;
+    height: 400px;
+    display: flex;
+}
+
+section#carousel .slides input {
+    display: none;
+}
+
+section#carousel .slide {
+    width: 25%;
+    position: relative;
+}
+
+section#loja {
+    padding: 70px;
+}
+
+section#loja .title {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+section#loja .title-text {
+    font-size: 5em;
+    font-weight: 300;
+    color: #4d4d4d;
+}
+
+section#loja .content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+section#loja .box {
+    width: 340px;
+    margin: 20px;
+    border: 15px solid #fff;
+    box-shadow: 0 5px 35px rgba(0, 0, 0, 0.08);
+}
+
+section#loja .imgBx {
+    position: relative;
+    width: 100%;
+    height: 300px;
+}
+
+section#loja img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+section#loja .btn {
+    font-size: 1em;
+    color: #fff;
+    background-color: #4d4d4d;
+    display: flex;
+    justify-content: center;
+    padding: 10px 30px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.5s;
+}
+
+section#loja .btn:hover {
+    letter-spacing: 5px;
+}
+
+section#sobre {
+    padding: 60px;
+}
+
+section#sobre .row {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+section#sobre .row .col50 {
+    position: relative;
+    width: 48%;
+}
+
+section#sobre .title-text {
+    font-size: 3em;
+    color: #4d4d4d;
+    font-weight: bolder;
+    padding-bottom: 30px;
+}
+
+section#sobre p {
+    text-align: justify;
+}
+
+
+section#sobre .row .col50 .imgBx {
+    position: relative;
+    width: 100%;
+    min-height: 300px;
+    /* height: 100%; */
+}
+
+section#sobre .row .col50 .imgBx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+section#trabalho {
+    padding: 60px;
+}
+
+section#trabalho .text {
+    padding-bottom: 20px;
+}
+
+section#trabalho p {
+    text-align: justify;
+}
+
+section#trabalho .title-text {
+    font-size: 3em;
+    color: #4d4d4d;
+    font-weight: bolder;
+    padding-bottom: 30px;
+}
+
+section#trabalho .btn {
+    font-size: 1em;
+    color: #fff;
+    background-color: #4d4d4d;
+    display: inline-block;
+    padding: 10px 30px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.5s;
+}
+
+section#trabalho .btn:hover {
+    letter-spacing: 5px;
+}
+
+section#trabalho .imagem-trabalho {
+    width: 100%;
+}
+
+section#materiais {
+    padding: 70px;
+}
+
+section#materiais .row {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+section#materiais .row .col50 {
+    position: relative;
+    width: 48%;
+}
+
+section#materiais .title-text {
+    font-size: 3em;
+    color: #4d4d4d;
+    font-weight: bolder;
+    padding-bottom: 30px;
+}
+
+section#materiais p {
+    text-align: justify;
+}
+
+
+section#materiais .row .col50 .imgBx {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+section#materiais .row .col50 .imgBx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+section#materiais .circulo-img {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    padding-top: 40px;
+}
+
+section#materiais .circulo-img img {
+    height: 90%;
+}
+
+section#mapa {
+    height: 70vh;
+    width: 100%;
+}
+
+section#mapa img {
+    height: 70vh;
+    width: 100%;
+}
+
+section#contato {
+    padding: 70px;
+}
+
+section#contato .contactForm {
+    padding: 75px 50px;
+    background: #fff;
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    margin-top: 50px;
+}
+
+section#contato h2 {
+    color: #4d4d4d;
+    font-size: 3em;
+    margin-bottom: 20px;
+    font-weight: 500;
+    text-align: center;
+}
+
+section#contato p {
+    text-align: center;
+}
+
+section#contato .contactForm .inputBox {
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+section#contato .contactForm .inputBox input,
+.contactForm .inputBox textarea {
+    width: 100%;
+    border: 1px solid #555;
+    padding: 10px;
+    color: #111;
+    outline: none;
+    font-size: 16px;
+    font-weight: 500;
+    resize: none;
+}
+
+section#contato .contactForm .inputBox input[type="submit"] {
+    font-size: 1em;
+    color: #fff;
+    background: #4d4d4d;
+    display: inline-block;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.5s;
+    max-width: 100px;
+    font-weight: 300;
+    border: none;
+    cursor: pointer;
+}
+
+/* MEDIA QUERIE */
+
+@media (max-width: 991px) {
+
+    header,
+    header.sticky {
+        padding: 10px 20px;
+    }
+
+    header .navigation {
+        display: none;
+    }
+
+    header .navigation.active {
+        width: 100%;
+        height: calc(100% - 68px);
+        position: fixed;
+        top: 68px;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: #252424;
+    }
+
+    header .navigation li {
+        margin-left: 0;
+    }
+
+    header .navigation li a {
+        color: #fff;
+        font-size: 1.6em;
+    }
+
+    .menuToggle {
+        position: relative;
+        width: 40px;
+        height: 40px;
+        background: url("/img/menu-header.png");
+        background-size: 30px;
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer;
+    }
+
+    .menuToggle.active {
+        background: url("/img/close.png");
+        background-size: 25px;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    section#catalogo {
+        padding: 20px;
+    }
+
+    section#catalogo .row {
+        flex-direction: column;
+    }
+
+    section#catalogo .row .col50 {
+        position: relative;
+        width: 100%;
+    }
+
+    section#catalogo .title-text {
+        font-size: 2em;
+    }
+
+    section#catalogo .row .col50 .imgBx {
+        height: 300px;
+        margin-top: 20px;
+    }
+
+    section#novo-catalogo {
+        padding: 20px;
+    }
+
+    section#novo-catalogo .row {
+        flex-direction: column;
+    }
+
+    section#novo-catalogo .row .col50 {
+        position: relative;
+        width: 100%;
+    }
+
+    section#novo-catalogo .row .col50 .imgBx {
+        height: 300px;
+        margin-top: 20px;
+    }
+
+    section#novo-catalogo .row .col50 .imgBx img {
+        height: 300px;
+    }
+
+    section#loja {
+        padding: 20px;
+    }
+
+    section#loja .title-text {
+        font-size: 3em;
+    }
+
+    section#loja .content {
+        margin-top: 20px;
+    }
+
+    section#loja .box {
+        margin-top: 10px;
+    }
+
+    section#lojam.imgBx {
+        height: 260px;
+    }
+
+    section#loja .btn {
+        font-size: 0.8em;
+    }
+
+    section#sobre {
+        padding: 20px;
+    }
+
+    section#sobre .row {
+        flex-direction: column;
+    }
+
+    section#sobre .row .col50 {
+        position: relative;
+        width: 100%;
+    }
+
+    section#sobre .row .col50 .imgBx {
+        height: 300px;
+        margin-top: 20px;
+    }
+
+    section#trabalho {
+        padding: 20px;
+    }
+
+    section#trabalho .title-text {
+        font-size: 2.5em;
+    }
+
+    section#materiais {
+        padding: 20px;
+    }
+
+    section#materiais .row {
+        flex-direction: column;
+    }
+
+    section#materiais .row .col50 {
+        position: relative;
+        width: 100%;
+    }
+
+    section#materiais .title-text {
+        font-size: 2em;
+    }
+
+    section#materiais .row .col50 .imgBx {
+        height: 40vh;
+        margin-top: 20px;
+    }
+
+    section#materiais .row .col50 .imgBx img {
+        height: 40vh;
+    }
+
+    section#materiais .circulo-img {
+        display: none;
+    }
+
+    section#contato {
+        padding: 20px;
+    }
+
+}

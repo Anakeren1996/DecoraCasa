@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Home Decorações</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+    <meta name="keywords" content="Decorações, Design de Interiores, Móveis">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Ana Lima">
+    <!-- Link BoxIcons -->
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.css" />
+    <!-- Link CSS Style -->
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+
+<body>
+    <header>
+        <a href="#" class="logo"><img class="img-logo" src="/img/logo.png"></a>
+        <div class="menuToggle" onclick="menuToggle();"></div>
+        <ul class="navigation">
+            <li><a href="#loja" onclick="menuToggle();">Loja</a></li>
+            <li><a href="#materiais" onclick="menuToggle();">Materiais</a></li>
+            <li><a href="#sobre" onclick="menuToggle();">Sobre Nós</a></li>
+            <li><a href="#contato" onclick="menuToggle();">Contato</a></li>
+        </ul>
+
+        <div class="nav__login">
+            <div class="nav__user">
+                <a href="#"><i class='bx bx-user' id="icons"></i></a>
+            </div>
+            <div class="nav__cart">
+                <a href="#"><i class='bx bxs-cart' id="icons"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <section id="topo">
+        <div class="content">
+            <h2>Decora Casa</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Dolore eveniet magnam reiciendis facilis
+                earum nam adipisci suscipit.</p>
+            <a href="#" class="btn">Novo Catálogo</a>
+        </div>
+    </section>
+
+    <section id="catalogo">
+        <div class="row">
+            <div class="col50">
+                <div class="imgBx">
+                    <img src="/img/primeira-imagem.png" alt="">
+                </div>
+            </div>
+            <div class="col50">
+                <h2 class="title-text">Decoração Natural</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis rerum, sequi voluptas, perferendis
+                    pariatur numquam molestiae earum a quod praesentium ut autem fugiat quasi cumque illo itaque
+                    delectus est facere.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis, distinctio praesentium
+                    doloremque quis sapiente illo iure ex ullam aut. Architecto recusandae ducimus eum natus officia
+                    assumenda dolorum atque quos ad.
+                </p>
+                <!-- <div class="circulo-img">
+                    <img src="/img/segunda-imagem.png" alt="">
+                </div> -->
+            </div>
+        </div>
+    </section>
+
+    <section id="novo-catalogo">
+        <div class="row">
+            <div class="col50">
+                <h2 class="title-text">Baixe nosso novo catálogo</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis rerum, sequi voluptas, perferendis
+                    pariatur numquam molestiae earum a quod praesentium ut autem fugiat quasi cumque illo itaque
+                    delectus est facere.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis, distinctio praesentium
+                    doloremque quis sapiente illo iure ex ullam aut. Architecto recusandae ducimus eum natus officia
+                    assumenda dolorum atque quos ad.
+                </p>
+                <a href="#" class="btn">Baixe agora</a>
+            </div>
+            <div class="col50">
+                <div class="imgBx">
+                    <img src="/img/terceira-imagem.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="loja">
+        <div class="title">
+            <h2 class="title-text">Nossos produtos</h2>
+        </div>
+        <div class="content">
+            <div class="box">
+                <div class="imgBx">
+                    <img src="/img/caroussel/first-img.png" alt="">
+                </div>
+                <div class="text">
+                    <a href="#" class="btn">Comprar agora</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="imgBx">
+                    <img src="/img/caroussel/second-img.png" alt="">
+                </div>
+                <div class="text">
+                    <a href="#" class="btn">Comprar agora</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="imgBx">
+                    <img src="/img/caroussel/third-img.png" alt="">
+                </div>
+                <div class="text">
+                    <a href="#" class="btn">Comprar agora</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="sobre">
+        <div class="row">
+            <div class="col50">
+                <div class="imgBx">
+                    <img src="/img/quarta-imagem.png" alt="">
+                </div>
+            </div>
+            <div class="col50">
+                <h2 class="title-text">Sobre nós</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis rerum, sequi voluptas, perferendis
+                    pariatur numquam molestiae earum a quod praesentium ut autem fugiat quasi cumque illo itaque
+                    delectus est facere.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis, distinctio praesentium
+                    doloremque quis sapiente illo iure ex ullam aut. Architecto recusandae ducimus eum natus officia
+                    assumenda dolorum atque quos ad.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="trabalho">
+        <div class="text">
+            <h2 class="title-text">Nosso Trabalho</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos adipisci earum asperiores pariatur quod
+                repellat, minus voluptatum provident beatae voluptatem accusamus deleniti, aliquid delectus, ea amet
+                corrupti ducimus suscipit maiores.</p>
+            <a href="#" class="btn">Leia mais</a>
+        </div>
+        <div class="imagem">
+            <img class="imagem-trabalho" src="/img/quinta-imagem.png" alt="">
+        </div>
+    </section>
+
+    <section id="materiais">
+        <div class="row">
+            <div class="col50">
+                <h2 class="title-text">Novos materiais recicláveis</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis rerum, sequi voluptas, perferendis
+                    pariatur numquam molestiae earum a quod praesentium ut autem fugiat quasi cumque illo itaque
+                    delectus est facere.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis, distinctio praesentium
+                    doloremque quis sapiente illo iure ex ullam aut. Architecto recusandae ducimus eum natus officia
+                    assumenda dolorum atque quos ad.
+                </p>
+                <div class="circulo-img">
+                    <img src="/img/sexta-imagem.png" alt="">
+                </div>
+            </div>
+            <div class="col50">
+                <div class="imgBx">
+                    <img src="/img/setima-imagem.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="mapa">
+        <div class="container">
+            <img src="/img/img-mapa.png" alt="Imagem do mapa da loja" />
+        </div>
+    </section>
+
+    <section id="contato">
+        <div class="title">
+            <h2>Entre em contato</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+        <div class="contactForm">
+            <div class="inputBox">
+                <input type="text" placeholder="Name">
+            </div>
+            <div class="inputBox">
+                <input type="text" placeholder="Email">
+            </div>
+            <div class="inputBox">
+                <textarea></textarea>
+            </div>
+            <div class="inputBox">
+                <input type="submit" value="Send">
+            </div>
+        </div>
+    </section>
+
+
+
+</body>
+
+<script src="/js/main.js" defer></script>
+
+</html>
