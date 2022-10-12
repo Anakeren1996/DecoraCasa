@@ -446,12 +446,10 @@ section#materiais .circulo-img img {
 }
 
 section#mapa {
-    height: 70vh;
     width: 100%;
 }
 
 section#mapa img {
-    height: 70vh;
     width: 100%;
 }
 
@@ -615,6 +613,7 @@ section#contato .contactForm .inputBox input[type="submit"] {
 
     section#loja .title-text {
         font-size: 3em;
+        text-align: center;
     }
 
     section#loja .content {
