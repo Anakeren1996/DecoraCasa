@@ -510,6 +510,46 @@ section#contato .contactForm .inputBox input[type="submit"] {
     cursor: pointer;
 }
 
+footer {
+    padding: 60px;
+    background: #4d4d4d;
+}
+
+footer .content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+footer .box {
+    width: 70px;
+    margin: 15px;
+    padding: 10px;
+    text-align: center;
+    background-color: #fff;
+    transition: 0.5s;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+footer .imgBx {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer a {
+    font-size: 2em;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #fff;
+}
+
+
 /* MEDIA QUERIE */
 
 @media (max-width: 991px) {
