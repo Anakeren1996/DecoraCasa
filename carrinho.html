@@ -247,11 +247,11 @@
                         </div>
 
                         <div class="tax">
-                            <span>Tax</span> <span>$ <span id="tax">0</span></span>
+                            <span>Tax</span> <span>$ <span id="tax">0.00</span></span>
                         </div>
 
                         <div class="shipping">
-                            <span>Shipping</span> <span>$ <span id="shipping">0</span></span>
+                            <span>Shipping</span> <span>$ <span id="shipping">0.00</span></span>
                         </div>
 
                         <div class="total">
@@ -300,7 +300,7 @@
 
                 let decrement = Number(this.nextElementSibling.textContent);
 
-                decrement <= 1 ? 1 : decrement--;
+                decrement <= 0 ? 0 : decrement--;
 
                 this.nextElementSibling.textContent = decrement;
 
